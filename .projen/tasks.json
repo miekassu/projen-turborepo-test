@@ -112,7 +112,15 @@
     },
     "post-compile": {
       "name": "post-compile",
-      "description": "Runs after successful compilation"
+      "description": "Runs after successful compilation",
+      "steps": [
+        {
+          "spawn": "compile"
+        },
+        {
+          "spawn": "build"
+        }
+      ]
     },
     "post-upgrade": {
       "name": "post-upgrade",
@@ -150,6 +158,9 @@
       "name": "test",
       "description": "Run tests",
       "steps": [
+        {
+          "spawn": "test"
+        },
         {
           "spawn": "eslint"
         }
