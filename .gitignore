@@ -46,5 +46,6 @@ jspm_packages/
 /dist/
 !/.eslintrc.json
 .turbo
+!/dist/fake.json
 !/.vscode/settings.json
 !/.github/workflows/upgrade-main.yml
