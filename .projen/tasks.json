@@ -115,10 +115,10 @@
       "description": "Runs after successful compilation",
       "steps": [
         {
-          "spawn": "compile"
+          "spawn": "turbo:compile"
         },
         {
-          "spawn": "build"
+          "spawn": "turbo:build"
         }
       ]
     },
@@ -159,10 +159,46 @@
       "description": "Run tests",
       "steps": [
         {
-          "spawn": "test"
+          "spawn": "turbo:test"
         },
         {
-          "spawn": "eslint"
+          "spawn": "turbo:eslint"
+        }
+      ]
+    },
+    "turbo:build": {
+      "name": "turbo:build",
+      "description": "Runs build in all sub-projects via turbo.",
+      "steps": [
+        {
+          "exec": "turbo run build"
+        }
+      ]
+    },
+    "turbo:compile": {
+      "name": "turbo:compile",
+      "description": "Runs compile in all sub-projects via turbo.",
+      "steps": [
+        {
+          "exec": "turbo run compile"
+        }
+      ]
+    },
+    "turbo:eslint": {
+      "name": "turbo:eslint",
+      "description": "Runs eslint in all sub-projects via turbo.",
+      "steps": [
+        {
+          "exec": "turbo run eslint"
+        }
+      ]
+    },
+    "turbo:test": {
+      "name": "turbo:test",
+      "description": "Runs test in all sub-projects via turbo.",
+      "steps": [
+        {
+          "exec": "turbo run test"
         }
       ]
     },
