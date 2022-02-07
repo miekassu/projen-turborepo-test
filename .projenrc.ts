@@ -3,7 +3,7 @@ import { TurborepoProject } from 'projen-turborepo'
 
 const project = new TurborepoProject({
   defaultReleaseBranch: 'main',
-  devDeps: ['projen-turborepo@0.0.38'],
+  devDeps: ['projen-turborepo'],
   name: 'projen-turborepo-test',
   projenrcTs: true,
 
