@@ -31,7 +31,7 @@
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
     "projen": "^0.52.17",
-    "projen-turborepo": "^0.0.43",
+    "projen-turborepo": "^0.0.44",
     "standard-version": "^9",
     "ts-node": "^9",
     "turbo": "^1.1.2",
@@ -41,7 +41,6 @@
   "license": "Apache-2.0",
   "version": "0.0.0",
   "types": "lib/index.d.ts",
-  "packageManager": "yarn",
   "private": true,
   "workspaces": [
     "package/sub-project-1",
