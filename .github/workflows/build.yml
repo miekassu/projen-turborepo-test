@@ -28,7 +28,7 @@ jobs:
         uses: felixmosh/turborepo-gh-artifacts@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          server-token: ${{ env.RUNNER_TEMP }}
+          server-token: ${{ github.path }}
       - name: Install dependencies
         run: yarn install --check-files
       - name: build
@@ -108,11 +108,11 @@ jobs:
         uses: felixmosh/turborepo-gh-artifacts@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          server-token: ${{ env.RUNNER_TEMP }}
+          server-token: ${{ github.path }}
       - name: Install dependencies
         run: yarn install --check-files --frozen-lockfile
       - name: Build
-        run: npx turbo run build --api="http://127.0.0.1:9080" --token="${{ env.RUNNER_TEMP }}" --team="${{ env.GITHUB_REPOSITORY_OWNER }}" --scope="${{ matrix.scope }}" --include-dependencies
+        run: npx turbo run build --api="http://127.0.0.1:9080" --token="${{ github.path }}" --team="${{ github.repository_owner }}" --scope="${{ matrix.scope }}" --include-dependencies
     strategy:
       fail-fast: true
       matrix:
