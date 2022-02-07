@@ -23,6 +23,7 @@ const subProjects = [1, 2, 3, 4, 5].map((n) => new typescript.TypeScriptProject(
   outdir: `package/sub-project-${n}`,
   parent: project,
   releaseToNpm: false,
+  package: false,
   jest: false,
 }))
 
