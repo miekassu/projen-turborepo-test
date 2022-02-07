@@ -17,7 +17,6 @@ const project = new TurborepoProject({
   // packageName: undefined,  /* The "name" in package.json. */
 })
 
-
 const subProjects = [1, 2, 3, 4, 5].map((n) => new typescript.TypeScriptProject({
   defaultReleaseBranch: 'master',
   name: `sub-project-${n}`,
@@ -27,7 +26,7 @@ const subProjects = [1, 2, 3, 4, 5].map((n) => new typescript.TypeScriptProject(
   jest: false,
 }))
 
-subProjects[0].addKeywords('a')
+subProjects[0].addDeps(subProjects[1].package.packageName)
 
 project.eslint?.addRules({
   semi: [
