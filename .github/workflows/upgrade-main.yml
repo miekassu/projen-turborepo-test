@@ -27,7 +27,7 @@ jobs:
         uses: felixmosh/turborepo-gh-artifacts@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          server-token: ${{ github.path }}
+          server-token: 54db2817-4e5b-4ad7-bc55-29ad818f363b
       - name: Install dependencies
         run: yarn install --check-files --frozen-lockfile
       - name: Upgrade dependencies
