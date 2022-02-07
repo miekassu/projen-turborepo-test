@@ -11,10 +11,6 @@ const project = new TurborepoProject({
   jestModuleNameMapper: true,
   projectReferences: true,
   parallelWorkflows: true,
-
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // packageName: undefined,  /* The "name" in package.json. */
 })
 
 const subProjects = [1, 2, 3, 4, 5].map((n) => new typescript.TypeScriptProject({
