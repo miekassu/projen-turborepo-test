@@ -24,6 +24,11 @@ jobs:
         with:
           cache: yarn
           cache-dependency-path: "**/yarn.lock"
+      - name: Setup turbo cache
+        uses: felixmosh/turborepo-gh-artifacts@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          server-token: ${{ env.RUNNER_TEMP }}
       - name: Install dependencies
         run: yarn install --check-files
       - name: build
@@ -99,10 +104,15 @@ jobs:
         with:
           cache: yarn
           cache-dependency-path: "**/yarn.lock"
+      - name: Setup turbo cache
+        uses: felixmosh/turborepo-gh-artifacts@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          server-token: ${{ env.RUNNER_TEMP }}
       - name: Install dependencies
         run: yarn install --check-files --frozen-lockfile
       - name: Build
-        run: npx turbo run build --scope=${{ matrix.scope }} --include-dependencies
+        run: npx turbo run build --api="http://127.0.0.1:9080" --token="${{ env.RUNNER_TEMP }}" --team="${{ env.GITHUB_REPOSITORY_OWNER }}" --scope="${{ matrix.scope }}" --include-dependencies
     strategy:
       fail-fast: true
       matrix:

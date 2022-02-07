@@ -31,7 +31,7 @@
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
     "projen": "^0.52.17",
-    "projen-turborepo": "^0.0.42",
+    "projen-turborepo": "^0.0.43",
     "standard-version": "^9",
     "ts-node": "^9",
     "turbo": "^1.1.2",
@@ -41,49 +41,7 @@
   "license": "Apache-2.0",
   "version": "0.0.0",
   "types": "lib/index.d.ts",
-  "turbo": {
-    "npmClient": "yarn",
-    "baseBranch": "origin/main",
-    "pipeline": {
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "build/**",
-          "dist/**",
-          "lib/**",
-          "storybook-static/**"
-        ]
-      },
-      "compile": {
-        "dependsOn": [
-          "^compile"
-        ],
-        "outputs": [
-          "build/**",
-          "dist/**",
-          "lib/**",
-          "storybook-static/**"
-        ]
-      },
-      "test": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "coverage/**",
-          "test-reports/**"
-        ]
-      },
-      "eslint": {
-        "outputs": []
-      },
-      "watch": {
-        "cache": false
-      }
-    }
-  },
+  "packageManager": "yarn",
   "private": true,
   "workspaces": [
     "package/sub-project-1",
