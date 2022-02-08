@@ -112,13 +112,4 @@ jobs:
       - name: Install dependencies
         run: yarn install --check-files --frozen-lockfile
       - name: Build
-        run: npx turbo run build --api="http://127.0.0.1:9080" --token="${{ github.sha }}" --team="${{ github.repository_owner }}" --scope="${{ matrix.scope }}" --include-dependencies
-    strategy:
-      fail-fast: true
-      matrix:
-        scope:
-          - sub-project-1
-          - sub-project-2
-          - sub-project-3
-          - sub-project-4
-          - sub-project-5
+        run: npx turbo run build --api="http://127.0.0.1:9080" --token="${{ github.sha }}" --team="${{ github.repository_owner }}"

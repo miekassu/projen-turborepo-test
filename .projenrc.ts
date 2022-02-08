@@ -11,7 +11,7 @@ const project = new TurborepoProject({
   pathMapping: true,
   jestModuleNameMapper: true,
   projectReferences: true,
-  parallelWorkflows: true,
+  parallelWorkflows: false,
 })
 
 const subProjects = [1, 2, 3, 4, 5].map((n) => new typescript.TypeScriptProject({
