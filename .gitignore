@@ -48,4 +48,3 @@ jspm_packages/
 !/turbo.json
 !/dist/fake.json
 !/.vscode/settings.json
-!/.github/workflows/upgrade-main.yml

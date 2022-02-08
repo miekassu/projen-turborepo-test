@@ -6,6 +6,7 @@ const project = new TurborepoProject({
   devDeps: ['projen-turborepo'],
   name: 'projen-turborepo-test',
   projenrcTs: true,
+  depsUpgrade: false,
 
   pathMapping: true,
   jestModuleNameMapper: true,
