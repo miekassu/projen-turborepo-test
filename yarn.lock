@@ -2919,10 +2919,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen-turborepo@0.0.55:
-  version "0.0.55"
-  resolved "https://registry.yarnpkg.com/projen-turborepo/-/projen-turborepo-0.0.55.tgz#84b07582f78f751150dc353c16ddbe117c57f82e"
-  integrity sha512-HVYvP3S/O/Ni3ftNfm9nv/jUKBjMBCuGQGjQY7glycH6BkhQXvYxjDwcx0fkcSJS4O7grclVUg8s8Uw77B0ukw==
+projen-turborepo@0.0.56:
+  version "0.0.56"
+  resolved "https://registry.yarnpkg.com/projen-turborepo/-/projen-turborepo-0.0.56.tgz#4da8ef8d99dc43eea54ad61bed69bac872b33b41"
+  integrity sha512-HY79qoA80+UAd4syGqh6emjPLLUlXTkj2OhFMu+jr0EW9Yu7pVNX0xRszIzSzbJakcCF6UtaHK42tSRS4GvTXQ==
   dependencies:
     dotalias "^0.0.5"
 
