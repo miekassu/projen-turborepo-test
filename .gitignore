@@ -47,4 +47,4 @@ jspm_packages/
 !/.eslintrc.json
 !/turbo.json
 !/dist/fake.json
-!/.vscode/settings.json
+!/projen-turborepo-test.code-workspace

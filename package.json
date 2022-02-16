@@ -31,7 +31,7 @@
     "eslint-plugin-import": "^2.25.4",
     "json-schema": "^0.4.0",
     "projen": "^0.52.31",
-    "projen-turborepo": "0.0.56",
+    "projen-turborepo": "0.0.59",
     "standard-version": "^9",
     "ts-node": "^9",
     "turbo": "^1.1.2",

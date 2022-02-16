@@ -19,11 +19,6 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          cache: yarn
-          cache-dependency-path: "**/yarn.lock"
       - name: Install dependencies
         run: yarn install --check-files
       - name: build
@@ -100,13 +95,7 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           server-token: ${{ github.sha }}
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          cache: yarn
-          cache-dependency-path: "**/yarn.lock"
       - name: Install dependencies
         run: yarn install --check-files --frozen-lockfile
       - name: Build
         run: npx turbo run build --api="http://127.0.0.1:9080" --token="${{ github.sha }}" --team="${{ github.repository_owner }}"
-    strategy: {}

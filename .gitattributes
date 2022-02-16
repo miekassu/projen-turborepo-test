@@ -14,10 +14,10 @@
 /.projen/deps.json linguist-generated
 /.projen/files.json linguist-generated
 /.projen/tasks.json linguist-generated
-/.vscode/settings.json linguist-generated
 /dist/fake.json linguist-generated
 /LICENSE linguist-generated
 /package.json linguist-generated
+/projen-turborepo-test.code-workspace linguist-generated
 /tsconfig.dev.json linguist-generated
 /tsconfig.json linguist-generated
 /turbo.json linguist-generated

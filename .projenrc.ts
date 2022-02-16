@@ -12,6 +12,7 @@ const project = new TurborepoProject({
   jestModuleNameMapper: true,
   projectReferences: true,
   parallelWorkflows: false,
+  vscodeMultiRootWorkspaces: true,
 })
 
 const subProjects = [1, 2, 3, 4, 5].map((n) => new typescript.TypeScriptProject({

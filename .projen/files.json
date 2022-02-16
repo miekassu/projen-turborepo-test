@@ -13,9 +13,9 @@
     ".projen/deps.json",
     ".projen/files.json",
     ".projen/tasks.json",
-    ".vscode/settings.json",
     "dist/fake.json",
     "LICENSE",
+    "projen-turborepo-test.code-workspace",
     "tsconfig.dev.json",
     "tsconfig.json",
     "turbo.json"
