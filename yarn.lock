@@ -2944,6 +2944,24 @@ projen@^0.52.17:
     yaml next
     yargs "^16.2.0"
 
+projen@^0.52.31:
+  version "0.52.31"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.52.31.tgz#30e1990c8d9e5b2e43be67a300b178e0d9b4808e"
+  integrity sha512-gu24uIzb468OcC2mHO0mzCQmt+TNBT+qw9w34DIbP/YWSKnJRwMFp9+iyHDZsUT+ydD2s780GgLW9g/FmXFZqg==
+  dependencies:
+    "@iarna/toml" "^2.2.5"
+    case "^1.6.3"
+    chalk "^4.1.2"
+    conventional-changelog-config-spec "^2.1.0"
+    fs-extra "^9.1.0"
+    glob "^7"
+    ini "^2.0.0"
+    semver "^7.3.5"
+    shx "^0.3.4"
+    xmlbuilder2 "^2.4.1"
+    yaml next
+    yargs "^16.2.0"
+
 promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
