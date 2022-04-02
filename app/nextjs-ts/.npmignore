@@ -13,6 +13,4 @@ dist
 /.idea/
 /.projenrc.js
 tsconfig.tsbuildinfo
-/tailwind.config.json
-/postcss.config.json
 /.next/
