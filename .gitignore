@@ -48,3 +48,4 @@ jspm_packages/
 !/turbo.json
 !/dist/fake.json
 !/projen-turborepo-test.code-workspace
+!/.github/workflows/upgrade-main.yml
