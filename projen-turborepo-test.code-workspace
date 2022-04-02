@@ -5,41 +5,23 @@
       "path": "./"
     },
     {
-      "name": "sub-project-1",
-      "path": "package/sub-project-1"
+      "name": "NextJS-TS",
+      "path": "app/nextjs-ts"
     },
     {
-      "name": "sub-project-2",
-      "path": "package/sub-project-2"
-    },
-    {
-      "name": "sub-project-3",
-      "path": "package/sub-project-3"
-    },
-    {
-      "name": "sub-project-4",
-      "path": "package/sub-project-4"
-    },
-    {
-      "name": "sub-project-5",
-      "path": "package/sub-project-5"
+      "name": "sub-project",
+      "path": "package/sub-project"
     }
   ],
   "settings": {
     "eslint.workingDirectories": [
-      "./package/sub-project-1",
-      "./package/sub-project-2",
-      "./package/sub-project-3",
-      "./package/sub-project-4",
-      "./package/sub-project-5"
+      "./app/nextjs-ts",
+      "./package/sub-project"
     ],
     "jest.disabledWorkspaceFolders": [
       "projen-turborepo-test",
-      "sub-project-1",
-      "sub-project-2",
-      "sub-project-3",
-      "sub-project-4",
-      "sub-project-5"
+      "NextJS-TS",
+      "sub-project"
     ]
   },
   "extensions": {

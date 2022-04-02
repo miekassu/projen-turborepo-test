@@ -1,4 +1,4 @@
-import { typescript } from 'projen'
+import { typescript, web } from 'projen'
 import { TurborepoProject } from 'projen-turborepo'
 
 const project = new TurborepoProject({
@@ -15,17 +15,25 @@ const project = new TurborepoProject({
   vscodeMultiRootWorkspaces: true,
 })
 
-const subProjects = [1, 2, 3, 4, 5].map((n) => new typescript.TypeScriptProject({
-  defaultReleaseBranch: 'master',
-  name: `sub-project-${n}`,
-  outdir: `package/sub-project-${n}`,
+new web.NextJsTypeScriptProject({
+  defaultReleaseBranch: 'main',
+  name: 'NextJS-TS',
+  parent: project,
+  outdir: 'app/nextjs-ts',
+  tailwind: false,
+})
+
+new typescript.TypeScriptProject({
+  defaultReleaseBranch: 'main',
+  name: 'sub-project',
+  outdir: 'package/sub-project',
   parent: project,
   releaseToNpm: false,
   package: false,
   jest: false,
-}))
+})
 
-subProjects[0].addDeps(subProjects[1].package.packageName)
+// next.addDeps(subProject.package.packageName)
 
 project.eslint?.addRules({
   semi: [
