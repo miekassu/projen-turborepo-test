@@ -36,4 +36,5 @@ jspm_packages/
 !/pages/
 /lib
 /dist/
+!/.eslintrc.json
 /.next/

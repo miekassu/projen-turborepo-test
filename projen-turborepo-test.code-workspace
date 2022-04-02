@@ -5,7 +5,7 @@
       "path": "./"
     },
     {
-      "name": "NextJS-TS",
+      "name": "nextjs-ts",
       "path": "app/nextjs-ts"
     },
     {
@@ -20,7 +20,7 @@
     ],
     "jest.disabledWorkspaceFolders": [
       "projen-turborepo-test",
-      "NextJS-TS",
+      "nextjs-ts",
       "sub-project"
     ]
   },

@@ -1,4 +1,3 @@
-import "tailwindcss/tailwind.css"
 import Head from "next/head"
 
 export default function Home() {

@@ -17,10 +17,11 @@ const project = new TurborepoProject({
 
 const next = new web.NextJsTypeScriptProject({
   defaultReleaseBranch: 'master',
-  name: 'NextJS-TS',
+  name: 'nextjs-ts',
   parent: project,
   outdir: 'app/nextjs-ts',
   tailwind: false,
+  eslint: true,
 })
 
 const subProject = new typescript.TypeScriptProject({
