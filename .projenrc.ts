@@ -16,7 +16,7 @@ const project = new TurborepoProject({
 })
 
 new web.NextJsTypeScriptProject({
-  defaultReleaseBranch: 'main',
+  defaultReleaseBranch: 'master',
   name: 'NextJS-TS',
   parent: project,
   outdir: 'app/nextjs-ts',
@@ -24,7 +24,7 @@ new web.NextJsTypeScriptProject({
 })
 
 new typescript.TypeScriptProject({
-  defaultReleaseBranch: 'main',
+  defaultReleaseBranch: 'master',
   name: 'sub-project',
   outdir: 'package/sub-project',
   parent: project,
