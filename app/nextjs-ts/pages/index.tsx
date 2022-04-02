@@ -1,6 +1,8 @@
-import Head from "next/head"
+import Head from 'next/head';
+import { sayHello } from 'sub-project';
 
 export default function Home() {
+
   return (
     <div className="container">
       <Head>
@@ -12,9 +14,9 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <h2 className="description">
+          From sub-project: {sayHello()}
+        </h2>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
@@ -204,5 +206,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
