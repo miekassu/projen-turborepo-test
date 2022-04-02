@@ -15,7 +15,7 @@ const project = new TurborepoProject({
   vscodeMultiRootWorkspaces: true,
 })
 
-new web.NextJsTypeScriptProject({
+const next = new web.NextJsTypeScriptProject({
   defaultReleaseBranch: 'master',
   name: 'NextJS-TS',
   parent: project,
@@ -23,7 +23,7 @@ new web.NextJsTypeScriptProject({
   tailwind: false,
 })
 
-new typescript.TypeScriptProject({
+const subProject = new typescript.TypeScriptProject({
   defaultReleaseBranch: 'master',
   name: 'sub-project',
   outdir: 'package/sub-project',
@@ -33,7 +33,7 @@ new typescript.TypeScriptProject({
   jest: false,
 })
 
-// next.addDeps(subProject.package.packageName)
+next.addDeps(subProject.package.packageName)
 
 project.eslint?.addRules({
   semi: [
